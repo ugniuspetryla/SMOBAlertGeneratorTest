@@ -1,4 +1,4 @@
-name: test
+name: PR to master
 
 on:
   pull_request:
@@ -6,8 +6,13 @@ on:
       - master
 
 jobs:
-  say-hello:
+  get-gitlab-code:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "Hello World"
+      - name: Checkout this repo
+        uses: actions/checkout@v3
+
+      - name: Clone GitLab repo
+        run: |
+          git clone https://gitlab.com/your-username/your-repo.git gitlab-repo
+          ls gitlab-repo
