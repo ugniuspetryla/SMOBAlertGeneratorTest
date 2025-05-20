@@ -14,5 +14,5 @@ jobs:
 
       - name: Clone GitLab repo
         run: |
-          git clone https://gitlab.com/your-username/your-repo.git gitlab-repo
-          ls gitlab-repo
+          git clone https://git.mif.vu.lt/ugpe6100/sbomalertgenerator.git sbomalertgenerator
+          ls sbomalertgenerator
