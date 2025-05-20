@@ -1,1 +1,3 @@
 # SMOBAlertGeneratorTest
+
+test ci
